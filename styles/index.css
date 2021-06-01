@@ -1,0 +1,57 @@
+nav {
+  background: #181818;
+}
+
+nav div {
+  padding: 10px 20px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+ul li a {
+  color: white;
+}
+
+button {
+  background: #95E1F9;
+  border-radius: 26px 3px;
+  padding: 12px 33px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero_content {
+  margin: 0;
+}
+/*# sourceMappingURL=index.css.map */
