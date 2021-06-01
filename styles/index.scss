@@ -40,6 +40,13 @@ button {
 .hero {
     display: flex;
     &_content {
-margin: 0;
+        width: 405px;
+margin: 150px auto;
+text-align: center;
+ h1{
+     font-family: 'EB Garamond', serif;
+     font-size: 48px;
+     margin-bottom: 48px;
+ }
     }
 }
