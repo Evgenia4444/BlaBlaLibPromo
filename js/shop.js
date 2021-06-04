@@ -42,7 +42,9 @@ function moveToPrevSlide() {
 }
 
 
-
+$('.button_buy').on('click', function(){
+    $('.modal').css('display', 'block')
+})
     // $(document).ready(function() {
     //     $('.carousel_button-prev').click(function(){
     //         if(slidePosition === 0){

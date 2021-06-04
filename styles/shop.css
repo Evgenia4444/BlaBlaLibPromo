@@ -38,6 +38,7 @@ section {
 .carousel {
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .carousel_item,
@@ -102,5 +103,41 @@ button {
 
 .carousel button {
   margin-top: 30px;
+}
+
+.modal {
+  background: #181818;
+  padding: 43px 63px;
+  color: #fff;
+  border-radius: 28px 3px 28px 3px;
+  margin: 60px auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  display: none;
+  -webkit-animation: top 1s direction fill-mode;
+          animation: top 1s direction fill-mode;
+}
+
+@-webkit-keyframes top {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes top {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+.modal h3 {
+  font-size: 22px;
 }
 /*# sourceMappingURL=shop.css.map */

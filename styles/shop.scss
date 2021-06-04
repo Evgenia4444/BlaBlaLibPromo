@@ -27,11 +27,13 @@ ul {
 
 section {
     background: #181818;
+    // display: flex;
 }
 
 .carousel {
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
     
 }
 
@@ -98,4 +100,27 @@ button {
 }
 .carousel button {
     margin-top: 30px;
+}
+
+
+.modal {
+    background: #181818;
+    padding: 43px 63px;
+    color: #fff;
+    border-radius: 28px 3px 28px 3px;
+    margin: 60px auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: none;
+    animation: top 1s direction fill-mode;
+
+    @keyframes top {
+        from {top: -100px;}
+        to {top: 100%;}
+    }
+    h3 {
+        font-size: 22px;
+    }
+    
 }
