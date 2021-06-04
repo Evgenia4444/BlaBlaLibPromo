@@ -37,16 +37,46 @@ button {
     cursor: pointer;
 }
 
+
 .hero {
     display: flex;
+
     &_content {
-        width: 405px;
-margin: 150px auto;
-text-align: center;
- h1{
-     font-family: 'EB Garamond', serif;
-     font-size: 48px;
-     margin-bottom: 48px;
- }
+        width: 400px;
+        margin: 150px auto;
+        text-align: center;
+
+        h1{
+            font-family: 'EB Garamond', serif;
+            font-size: 48px;
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.seen {
+    display: block;
+}
+
+.random {
+    display: flex;
+
+    &_content {
+        margin: 50px auto;
+        text-align: center;
+        align-items: center;
+        width: 400px;
+
+        h2 {
+            margin-bottom: 16px;
+            font-size: 32px;
+            font-family: 'EB Garamond', serif;
+            font-weight: 800;
+        }
+        p{ margin-bottom: 32px;
+        }
+        button {
+            font-size: 16px;
+        }
     }
 }

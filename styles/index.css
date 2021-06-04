@@ -52,7 +52,7 @@ button {
 }
 
 .hero_content {
-  width: 405px;
+  width: 400px;
   margin: 150px auto;
   text-align: center;
 }
@@ -61,5 +61,39 @@ button {
   font-family: 'EB Garamond', serif;
   font-size: 48px;
   margin-bottom: 48px;
+}
+
+.seen {
+  display: block;
+}
+
+.random {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.random_content {
+  margin: 50px auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+}
+
+.random_content h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 800;
+}
+
+.random_content p {
+  margin-bottom: 32px;
+}
+
+.random_content button {
+  font-size: 16px;
 }
 /*# sourceMappingURL=index.css.map */

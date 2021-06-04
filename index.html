@@ -13,37 +13,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+
 </head>
 
 <body>
     <nav class="=nav">
         <div class="nav_wrapper">
-            <img src="./images/logo.png" alt="logo">
+            <a href="index.html">
+
+                <img src="./images/logo.png" alt="logo">
+            </a>
             <ul>
                 <li>
-                    <a href="/znamenitosti">
+                    <a href="znamenitosti.html">
                         Знаменитости
                     </a>
                 </li>
                 <li>
-                    <a href="/shop">
+                    <a href="shop.html">
                         Магазин
                     </a>
                 </li>
                 <li>
-                    <a href="/about">
+                    <a href="about.html">
                         О нас
                     </a>
                 </li>
                 <li>
-                    <a href="contact">
+                    <a href="contact.html">
                         Контакты
                     </a>
                 </li>
             </ul>
 
-            <button type='button'>
+            <button class="nav_btn" type='button'>
                 Забронировать
             </button>
         </div>
@@ -57,13 +65,30 @@
                 из прошлого
             </h1>
 
-            <button>
+            <button href='' class="nav_btn">
                 Посмотреть всех знаменитостей
             </button>
         </div>
     </section>
 
-    <script text='havascript/text'></script>
+
+    <section class="random">
+        <div class="random_content">
+            <h2>
+                Узнай, с кем тебе стоит встретиться
+            </h2>
+            <p>
+                Трудно выбрать гостя из прошлого? Мы поможем тебе с выбором!
+            </p>
+            <button>
+                Узнать
+            </button>
+        </div>
+    </section>
+
+    <script type="text/javascript" src='./js/index.js'>
+
+    </script>
 </body>
 
 </html>
