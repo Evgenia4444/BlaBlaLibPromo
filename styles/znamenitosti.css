@@ -1,0 +1,149 @@
+section {
+  background: #181818;
+}
+
+nav {
+  background: #181818;
+}
+
+nav div {
+  padding: 10px 20px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+ul li a {
+  color: white;
+}
+
+button {
+  background: #95E1F9;
+  border-radius: 26px 3px;
+  padding: 12px 33px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+p {
+  font-size: 32px;
+  font-family: 'EB Garamond', serif;
+  color: #fff;
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.people_wrapper {
+  padding: 0 40px;
+}
+
+.people_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto 40px;
+}
+
+.people_row .people_category {
+  float: left;
+  margin: 0;
+  text-align: left;
+}
+
+.people_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.person_card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.person_card {
+  background: #95E1F9;
+  height: 244px;
+  width: calc((100% - 100px) / 6);
+  border-radius: 20px 0 20px 0;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.person_card:nth-child(7) {
+  margin-right: 0;
+}
+
+.person_card-bottom {
+  width: calc(((100% - 100px) / 6) - 20px);
+  height: 55px;
+  background: #fff;
+  margin-top: 0;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0 0 20px 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.person_card-bottom p {
+  font-size: 20px;
+  color: #181818;
+  padding: 14px 7px;
+}
+
+.blue {
+  background: #95E1F9;
+}
+
+.pink {
+  background: #FF4242;
+}
+
+.purple {
+  background: #8438FF;
+}
+/*# sourceMappingURL=znamenitosti.css.map */
