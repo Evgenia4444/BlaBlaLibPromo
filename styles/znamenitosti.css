@@ -135,6 +135,16 @@ p {
   padding: 14px 7px;
 }
 
+.cardOnHover {
+  border: 7px solid #fff;
+  border-radius: 20px 0 0 0;
+}
+
+.cardBottomOnHover {
+  bottom: -50px;
+  opacity: 1;
+}
+
 .blue {
   background: #95E1F9;
 }
