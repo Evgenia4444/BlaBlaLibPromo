@@ -71,6 +71,7 @@ button {
 .hero_content .nav_btn {
   cursor: pointer;
   background: #FF4242;
+  padding: 12px 33px;
 }
 
 .streamPath {
