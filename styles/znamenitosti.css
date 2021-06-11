@@ -105,6 +105,15 @@ p {
   margin-right: 20px;
   cursor: pointer;
   z-index: 100;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.person_card img {
+  width: 100%;
+  height: auto;
 }
 
 .person_card:nth-child(7) {
@@ -112,7 +121,7 @@ p {
 }
 
 .person_card-bottom {
-  width: calc(((100% - 100px) / 6) - 20px);
+  width: calc(((100% - 100px) / 6) - 13px);
   height: 55px;
   background: #fff;
   margin-top: 0;

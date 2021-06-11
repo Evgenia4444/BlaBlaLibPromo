@@ -90,13 +90,22 @@ padding: 0 40px;
     margin-right: 20px;
     cursor: pointer;
     z-index: 100;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+
+    img {
+        width: 100%;
+        height: auto;
+        
+    }
 
     &:nth-child(7) {
         margin-right: 0;
     }
 
     &-bottom {
-        width: calc(((100% - 100px) / 6) - 20px);
+        width: calc(((100% - 100px) / 6) - 13px);
         height: 55px;
         background: #fff;
         margin-top: 0;
