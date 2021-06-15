@@ -165,4 +165,39 @@ p {
 .purple {
   background: #8438FF;
 }
+
+.hidden {
+  opacity: 0;
+  top: -30%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.visible {
+  opacity: 1;
+  top: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.person_card-open {
+  background: #95E1F9;
+  border-radius: 120px 0 120px 0;
+  width: 600px;
+  height: 250px;
+  position: absolute;
+  z-index: 120;
+  margin: auto;
+}
+
+.person_card-open .card-open_image {
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.person_card-open .card-open_image img {
+  width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=znamenitosti.css.map */

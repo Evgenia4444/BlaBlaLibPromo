@@ -1,6 +1,6 @@
 nav {
   background: #181818;
-  z-index: 100;
+  z-index: 1000;
 }
 
 nav div {
@@ -66,6 +66,7 @@ button {
   font-family: 'EB Garamond', serif;
   font-size: 48px;
   margin-bottom: 48px;
+  font-weight: 300;
 }
 
 .hero_content .nav_btn {
@@ -82,11 +83,19 @@ button {
   right: 0;
 }
 
-.streamPath path {
+.streamPath svg {
+  width: 100%;
+  height: auto;
+  -webkit-mask-size: 100% auto;
+          mask-size: 100% auto;
+}
+
+.streamPath svg path {
   -webkit-animation: stream 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
           animation: stream 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
   opacity: 1;
-  width: 100%;
+  -webkit-mask-size: 100% auto;
+          mask-size: 100% auto;
 }
 
 @-webkit-keyframes stream {
@@ -137,6 +146,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  min-height: 400px;
 }
 
 .random_content {
@@ -145,7 +156,8 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
+  width: 500px;
+  margin: auto;
 }
 
 .random_content h2 {
@@ -161,5 +173,24 @@ button {
 
 .random_content button {
   font-size: 16px;
+}
+
+.random_content .randomImage_container {
+  width: 100px;
+  height: 100px;
+  background: #95E1F9;
+  margin: 10px auto 20px;
+}
+
+.random .randomImage1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.random .randomImage2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 /*# sourceMappingURL=index.css.map */
