@@ -1,0 +1,156 @@
+nav {
+  background: #181818;
+  z-index: 1000;
+}
+
+nav div {
+  padding: 10px 20px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+ul li a {
+  color: white;
+}
+
+button {
+  background: #95E1F9;
+  border-radius: 26px 3px;
+  padding: 12px 33px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.about_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  background: #181818;
+}
+
+.about_main-photo {
+  width: 400px;
+  height: 400px;
+  background-image: url("../images/aboutMainPhoto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about_main-content {
+  width: 50%;
+}
+
+.about_main-content .text {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.about_main-content .text .headline {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.about_main-content .owl-carousel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.photos {
+  background: #181818;
+  color: #fff;
+  padding: 50px;
+}
+
+.webposter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.webposter .text {
+  width: 40%;
+  font-size: 18px;
+}
+
+.webposter .allusion {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.webposter .allusion .arrow_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.webposter .allusion .arrow_container p {
+  font-size: 20px;
+}
+
+.webposter .allusion .arrow_container img {
+  width: 80px;
+}
+
+.webposter .allusion .webposter_container {
+  background-image: url(../images//webposter.png);
+  width: 50%;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.webposter .allusion .webposter_container a {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=about.css.map */
