@@ -90,7 +90,6 @@ padding: 0 40px;
     margin-right: 20px;
     cursor: pointer;
     z-index: 100;
-    overflow: hidden;
     position: relative;
     transition: 0.3s;
 
@@ -105,11 +104,12 @@ padding: 0 40px;
     }
 
     &-bottom {
-        width: calc(((100% - 100px) / 6) - 13px);
+        width: calc((100% - 0px) +  14px) ;
         height: 55px;
         background: #fff;
         margin-top: 0;
         position: absolute;
+        left: -7px;
         bottom: 0;
         display: flex;
         bottom: 0px;

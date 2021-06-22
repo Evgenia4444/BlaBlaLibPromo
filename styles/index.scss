@@ -65,17 +65,22 @@ button {
         cursor: pointer;
         background: #FF4242;
         padding: 12px 33px;
+
+         a {
+             color: #fff;
+         }
         
     }
 }
 
 .streamPath {
     position: absolute;
-    top: 80px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    
+    mask: url(../images/longmask-02.svg);
+    mask-size: auto 100%;
 
     svg {
          width: 100%;
@@ -107,12 +112,14 @@ button {
        
    img {
        position: absolute;
-       
+       object-fit: cover;
        bottom: 0;
        left: 0;
        right: 0;
        width: 100%;
-       clip-path: url(#stream);
+      
+      
+       
       
    }
 }

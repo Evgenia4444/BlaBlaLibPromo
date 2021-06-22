@@ -105,7 +105,6 @@ p {
   margin-right: 20px;
   cursor: pointer;
   z-index: 100;
-  overflow: hidden;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -121,11 +120,12 @@ p {
 }
 
 .person_card-bottom {
-  width: calc(((100% - 100px) / 6) - 13px);
+  width: calc((100% - 0px) +  14px);
   height: 55px;
   background: #fff;
   margin-top: 0;
   position: absolute;
+  left: -7px;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;

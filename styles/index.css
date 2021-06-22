@@ -75,12 +75,20 @@ button {
   padding: 12px 33px;
 }
 
+.hero_content .nav_btn a {
+  color: #fff;
+}
+
 .streamPath {
   position: absolute;
-  top: 80px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  -webkit-mask: url(../images/longmask-02.svg);
+          mask: url(../images/longmask-02.svg);
+  -webkit-mask-size: auto 100%;
+          mask-size: auto 100%;
 }
 
 .streamPath svg {
@@ -130,12 +138,12 @@ button {
 
 .streamPath img {
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  -webkit-clip-path: url(#stream);
-          clip-path: url(#stream);
 }
 
 .seen {
