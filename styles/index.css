@@ -220,6 +220,8 @@ button {
   height: 100px;
   background: #95E1F9;
   margin: 10px auto 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .random .randomImage1 {
@@ -267,14 +269,14 @@ button {
   height: auto;
 }
 
-.footer_wrapper_links {
+.footer_links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
 }
 
-.footer_wrapper_links ul {
+.footer_links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,11 +289,11 @@ button {
   margin: 0 auto;
 }
 
-.footer_wrapper_links ul li {
+.footer_links ul li {
   display: inline;
 }
 
-.footer_wrapper_links ul li a {
+.footer_links ul li a {
   color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

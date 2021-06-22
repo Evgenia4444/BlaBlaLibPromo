@@ -124,3 +124,55 @@ button {
     }
     
 }
+
+.footer {
+    width: 100%;
+    background: #181818;
+
+    &_wrapper {
+        width: 70%;   
+        display: flex;
+        flex-direction: column;
+        padding: 40px 80px 60px;
+        margin: 0 auto;
+        align-items: center;
+
+        .footer_logo {
+            width: 64px;
+            height: 64px;
+            margin: 40px auto 0;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        
+
+    }
+}
+
+.footer_links {
+    
+        display: flex;
+        margin: 0 auto ;
+        
+
+        ul{
+           
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            margin: 0 auto;
+
+            li {
+                display: inline;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    
+}
