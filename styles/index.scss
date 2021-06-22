@@ -81,6 +81,17 @@ button {
     right: 0;
     mask: url(../images/longmask-02.svg);
     mask-size: auto 100%;
+    animation: streamAnim 100s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+
+    @keyframes streamAnim {
+        0% {
+            -webkit-mask-position: -200% top;
+        }
+        100% {
+            -webkit-mask-position: 0% top;
+        }
+     
+    }
 
     svg {
          width: 100%;

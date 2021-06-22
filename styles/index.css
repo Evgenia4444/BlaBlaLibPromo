@@ -89,6 +89,26 @@ button {
           mask: url(../images/longmask-02.svg);
   -webkit-mask-size: auto 100%;
           mask-size: auto 100%;
+  -webkit-animation: streamAnim 100s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+          animation: streamAnim 100s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+}
+
+@-webkit-keyframes streamAnim {
+  0% {
+    -webkit-mask-position: -200% top;
+  }
+  100% {
+    -webkit-mask-position: 0% top;
+  }
+}
+
+@keyframes streamAnim {
+  0% {
+    -webkit-mask-position: -200% top;
+  }
+  100% {
+    -webkit-mask-position: 0% top;
+  }
 }
 
 .streamPath svg {
