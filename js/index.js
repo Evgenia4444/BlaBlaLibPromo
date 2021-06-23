@@ -65,3 +65,7 @@ function moveToPrevSlide() {
     updateSlidePosition();
     
 }
+
+$('.burgerMenu').click(function() {
+  $('.mobileMenu').toggleClass('menuVisible')
+})

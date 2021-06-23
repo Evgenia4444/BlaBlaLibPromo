@@ -40,7 +40,7 @@ ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  width: 64%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -313,6 +313,7 @@ p {
             align-items: center;
     background: #181818;
     position: relative;
+    padding: 10px 0;
   }
   .nav_wrapper .mobileMenu {
     -webkit-box-orient: vertical;
@@ -348,8 +349,9 @@ p {
   }
   .nav_wrapper .menuVisible {
     display: block;
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    -webkit-transform: translateY(16%);
+            transform: translateY(16%);
+    z-index: 1200;
   }
   .nav_wrapper .burgerMenu {
     display: block;

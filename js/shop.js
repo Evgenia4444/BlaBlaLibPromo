@@ -72,3 +72,8 @@ $('.button_buy').on('click', function(){
     // function moveToNextSlide(){
     //     console.log('hey')
     // }
+
+
+    $('.burgerMenu').click(function() {
+        $('.mobileMenu').toggleClass('menuVisible')
+    })
