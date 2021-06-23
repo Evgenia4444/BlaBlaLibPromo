@@ -316,6 +316,7 @@ button {
        align-items: center;
        background: #181818;
        position: relative;
+       padding: 10px 0;
        
        .mobileMenu {
             flex-direction: column;
@@ -380,4 +381,7 @@ img {
 }
     }
 
+    .streamPath {
+        left: -70%;
+    }
 }
