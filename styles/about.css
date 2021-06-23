@@ -334,5 +334,20 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .about_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about_main-photo {
+    margin: 0 auto;
+  }
+  .about_main-content {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=about.css.map */
