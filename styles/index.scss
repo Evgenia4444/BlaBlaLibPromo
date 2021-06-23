@@ -196,6 +196,57 @@ button {
     }
 }
 
+.events {
+    padding: 80px 40px;
+
+   text-align: center;
+}
+.carousel {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel_item,
+.carousel_item-hidden {
+    display: none;
+    margin: 0 auto;
+}
+
+.carousel_item-visible {
+    display: block;
+}
+
+.carousel_item img {
+    width: 20%;
+    height: auto;
+    
+}
+
+.carousel_item p {
+    margin-top: 12px;
+}
+
+.events_header {
+    font-size: 48px;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 30px;
+}
+
+.carousel_actions {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.carousel_button-prev,
+.carousel_button-next {
+    background: transparent;
+}
+
 .footer {
     width: 100%;
     background: #181818;

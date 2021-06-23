@@ -15,3 +15,7 @@ $(".person_card").hover( function () {
 $('.vangogh').click(function(){
     $('.vangogh_open').toggleClass('visible')
 })
+
+$('.burgerMenu').click(function() {
+    $('.mobileMenu').toggleClass('menuVisible')
+})

@@ -24,6 +24,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 ul li {
@@ -33,6 +34,16 @@ ul li {
 
 ul li a {
   color: white;
+}
+
+.mobileMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 button {
@@ -47,6 +58,11 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
+  float: right;
+}
+
+.burgerMenu {
+  display: none;
 }
 
 p {
@@ -84,6 +100,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .person_card-wrapper {
@@ -260,5 +278,96 @@ p {
 
 .footer_links ul li a {
   color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+  .people_cards .person_card {
+    width: calc((100% - 100px) / 2);
+  }
+  .people_cards .person_card:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .people_cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .people_cards .person_card {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .people_row .people_category {
+    width: 100%;
+  }
+  .nav_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #181818;
+    position: relative;
+  }
+  .nav_wrapper .mobileMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #181818;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    display: none;
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+  .nav_wrapper .mobileMenu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #181818;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .nav_wrapper .mobileMenu button {
+    max-width: 200px;
+  }
+  .nav_wrapper .menuVisible {
+    display: block;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  .nav_wrapper .burgerMenu {
+    display: block;
+    position: absolute;
+    top: 38%;
+    right: 10%;
+  }
+  .people_header {
+    width: 100%;
+  }
+  .peope_category {
+    width: 200px;
+  }
+  .footer_links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=znamenitosti.css.map */

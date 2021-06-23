@@ -22,6 +22,8 @@ nav {
 ul {
     display: flex;
     align-items: center;
+    text-align: center;
+   
 
     li {
     margin-right: 16px;
@@ -33,6 +35,11 @@ ul {
     }
 }
 
+.mobileMenu {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
 button {
     background: #95E1F9;
     border-radius: 26px 3px;
@@ -43,9 +50,12 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
+    float: right;
 }
 
-
+.burgerMenu {
+    display: none;
+}
 p {
     font-size: 32px;
     font-family: 'EB Garamond', serif;
@@ -75,6 +85,7 @@ padding: 0 40px;
 
 .people_cards {
     display: flex;
+    flex-wrap: wrap;
     
 }
 .person_card-wrapper {
@@ -236,4 +247,91 @@ height: auto;
             }
         }
     
+}
+
+@media screen and (max-width: 1280px){
+    .people_cards {
+
+        .person_card {
+            width: calc((100% - 100px) / 2);
+
+            &:nth-child(2) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 678px){
+    .people_cards {
+ flex-direction: column;
+        .person_card {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    .people_row {
+       .people_category {
+           width: 100%;
+       }
+    }
+
+    .nav_wrapper {
+        flex-direction: column;
+       align-items: center;
+       background: #181818;
+       position: relative;
+       
+       .mobileMenu {
+            flex-direction: column;
+            background: #181818;
+            width: 100%;
+            align-items: center;
+            height: 100vh;
+            display: none;
+            transform: translateY(-20%);
+            transition: transform 0.3s;
+
+           ul {
+               flex-direction: column;
+               background: #181818;
+               width: 100%;
+               margin-bottom: 20px;
+               margin-top: 20px;
+           }
+    
+           button {
+               max-width: 200px;
+               
+           }
+       }
+
+.menuVisible {
+    display: block;
+    transform: translateY(20%);
+   
+
+}
+        .burgerMenu {
+            display: block;
+            position: absolute;
+            top: 38%;
+            right: 10%;
+        }
+    }
+
+    .people_header {
+        width: 100%;
+    }
+
+    .peope_category {
+        width: 200px;
+    }
+.footer_links {
+    ul {
+
+        flex-direction: column;
+    }
+}
 }

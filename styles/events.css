@@ -1,0 +1,132 @@
+nav {
+  background: #181818;
+  z-index: 1000;
+}
+
+nav div {
+  padding: 10px 20px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav div .logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+}
+
+nav div .logo img {
+  width: 32px;
+  height: auto;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+ul li a {
+  color: white;
+}
+
+button {
+  background: #95E1F9;
+  border-radius: 26px 3px;
+  padding: 12px 33px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 77px;
+}
+
+.poster {
+  width: calc((100% - 150px) / 4);
+  margin-right: 50px;
+}
+
+.poster:nth-child(4) {
+  margin-right: 0;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.poster:nth-child(2) {
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.poster img {
+  width: 100%;
+}
+
+.poster_content {
+  margin-top: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.poster_content hr {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  size: 2px;
+}
+
+.poster_content .title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.poster_content_info {
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+}
+
+.poster_content_info .date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 400;
+}
+
+.poster_content_info .time {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/*# sourceMappingURL=events.css.map */

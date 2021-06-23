@@ -132,12 +132,12 @@ justify-content: space-between;
     background: #181818;
     height: 200px;
     position: relative;
-    margin: 60px auto;
+    margin: 180px auto 60px;
     display: flex;
     
 .photo {
     width: calc((100% - 100px) / 5);
-    margin-left: 30px;
+    
     height: 200px;
 }
     .photo1 {
