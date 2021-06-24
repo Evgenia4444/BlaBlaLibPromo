@@ -71,7 +71,7 @@ padding: 30px 0;
 }
 
 .people_wrapper {
-padding: 0 40px;
+padding: 60px 40px;
 }
 
 .people_row {
@@ -257,6 +257,47 @@ color: #fff;
 
 }
 
+.person_card-open {
+    display: flex;
+   overflow: hidden;
+   width: 70%;
+   height: 36%;
+  
+}
+.card-open_content {
+   position: absolute;
+   padding: 50px 50px;
+   left: 0;
+   width: 50%;
+   
+  
+.name {
+   font-family: 'EB Garamond', serif;
+   font-size: 64px;
+   margin-bottom: 10px;
+   text-align: left;
+   padding: 0;
+  
+}
+
+.date {
+   text-align: left;
+   padding: 0;
+  
+}
+
+.info {
+   text-align: left;
+   font-size: 16px;
+}
+}
+.card-open_image {
+ 
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
 @media screen and (max-width: 1280px){
 .people_cards {
 
@@ -347,45 +388,7 @@ flex-direction: column;
 }
 }
 
-.person_card-open {
-     display: flex;
-    overflow: hidden;
-    width: 70%;
-    height: 38%;
-   
-}
-.card-open_content {
-    position: absolute;
-    padding: 50px 50px;
-    left: 0;
-    width: 50%;
-    
-   
-.name {
-    font-family: 'EB Garamond', serif;
-    font-size: 64px;
-    margin-bottom: 10px;
-    text-align: left;
-    padding: 0;
-   
-}
 
-.date {
-    text-align: left;
-    padding: 0;
-   
-}
-
-.info {
-    text-align: left;
-}
-}
-.card-open_image {
-  
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
 
 @media screen and (min-width: 1476px) {
 .person_card {

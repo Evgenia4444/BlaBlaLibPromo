@@ -80,7 +80,7 @@ p {
 }
 
 .people_wrapper {
-  padding: 0 40px;
+  padding: 60px 40px;
 }
 
 .people_row {
@@ -289,6 +289,46 @@ p {
   color: #fff;
 }
 
+.person_card-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 70%;
+  height: 36%;
+}
+
+.card-open_content {
+  position: absolute;
+  padding: 50px 50px;
+  left: 0;
+  width: 50%;
+}
+
+.card-open_content .name {
+  font-family: 'EB Garamond', serif;
+  font-size: 64px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 0;
+}
+
+.card-open_content .date {
+  text-align: left;
+  padding: 0;
+}
+
+.card-open_content .info {
+  text-align: left;
+  font-size: 16px;
+}
+
+.card-open_image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 @media screen and (max-width: 1280px) {
   .people_cards .person_card {
     width: calc((100% - 100px) / 2);
@@ -381,45 +421,6 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-.person_card-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  width: 70%;
-  height: 38%;
-}
-
-.card-open_content {
-  position: absolute;
-  padding: 50px 50px;
-  left: 0;
-  width: 50%;
-}
-
-.card-open_content .name {
-  font-family: 'EB Garamond', serif;
-  font-size: 64px;
-  margin-bottom: 10px;
-  text-align: left;
-  padding: 0;
-}
-
-.card-open_content .date {
-  text-align: left;
-  padding: 0;
-}
-
-.card-open_content .info {
-  text-align: left;
-}
-
-.card-open_image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 @media screen and (min-width: 1476px) {
