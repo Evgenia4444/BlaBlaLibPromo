@@ -388,3 +388,50 @@ img {
         left: -70%;
     }
 }
+
+
+@media screen and (max-width: 980px){
+    .nav_wrapper {
+        flex-direction: column;
+       align-items: center;
+       background: #181818;
+       position: relative;
+       padding: 10px 0;
+       
+       .mobileMenu {
+            flex-direction: column;
+            background: #181818;
+            width: 100%;
+            align-items: center;
+            height: 100vh;
+            opacity: 0;
+            transform: translateY(-20%);
+            transition: transform 0.3s;
+
+           ul {
+               flex-direction: column;
+               background: #181818;
+               width: 100%;
+               margin-bottom: 20px;
+               margin-top: 20px;
+           }
+    
+           button {
+               max-width: 200px;
+               
+           }
+       }
+
+.menuVisible {
+    opacity: 1;
+    transform: translateY(16%);
+    z-index: 1200;
+}
+        .burgerMenu {
+            display: block;
+            position: absolute;
+            top: 38%;
+            right: 10%;
+        }
+    }
+}

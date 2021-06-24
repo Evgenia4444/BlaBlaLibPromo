@@ -3,71 +3,71 @@ $pink: #FF4242;
 $purple: #8438FF;
 
 body {
-    overflow-x: hidden;
+overflow-x: hidden;
 }
 section {
-    background: #181818;
+background: #181818;
 }
 
 nav {
-    background: #181818;
-    
+background: #181818;
 
-   div {
-        padding: 10px 20px;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
 
-    }
+div {
+padding: 10px 20px;
+height: 80px;
+display: flex;
+justify-content: space-between;
+
+}
 }
 
 ul {
-    display: flex;
-    align-items: center;
-    text-align: center;
-   
+display: flex;
+align-items: center;
+text-align: center;
 
-    li {
-    margin-right: 16px;
-    display: inline-block;
 
-     a{
-         color: rgb(255, 255, 255);
-     }
-    }
+li {
+margin-right: 16px;
+display: inline-block;
+
+a{
+color: rgb(255, 255, 255);
+}
+}
 }
 
 .mobileMenu {
-    display: flex;
-    width: 64%;
-    justify-content: space-between;
-    
+display: flex;
+width: 64%;
+justify-content: space-between;
+
 }
 button {
-    background: #95E1F9;
-    border-radius: 26px 3px;
-    padding: 12px 33px;
-    text-align: center;
-    font-size: 16px;
-    justify-content: center;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    float: right;
+background: #95E1F9;
+border-radius: 26px 3px;
+padding: 12px 33px;
+text-align: center;
+font-size: 16px;
+justify-content: center;
+outline: none;
+border: none;
+cursor: pointer;
+float: right;
 }
 
 .burgerMenu {
-    display: none;
+display: none;
 }
 p {
-    font-size: 32px;
-    font-family: 'EB Garamond', serif;
-    color: #fff;
-    width: 600px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 30px 0;
+font-size: 32px;
+font-family: 'EB Garamond', serif;
+color: #fff;
+width: 600px;
+text-align: center;
+margin: 0 auto;
+padding: 30px 0;
 }
 
 .people_wrapper {
@@ -75,271 +75,309 @@ padding: 0 40px;
 }
 
 .people_row {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto 40px;
-    
-    .people_category {
-        float: left;
-        margin: 0;
-        text-align: left;
-    }
-    
+display: flex;
+flex-direction: column;
+margin: 0 auto 40px;
+
+.people_category {
+float: left;
+margin: 0;
+text-align: left;
+}
+
 }
 
 .people_cards {
-    display: flex;
-    flex-wrap: wrap;
-    
+display: flex;
+flex-wrap: wrap;
+
 }
 .person_card-wrapper {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+display: flex;
+flex-direction: column;
+position: relative;
 }
 .person_card {
-    background: $blue;
-    height: 244px;
-    width: calc((100% - 100px) / 6);
-    border-radius: 20px 0 20px 0;
-    margin-right: 20px;
-    cursor: pointer;
-    z-index: 100;
-    position: relative;
-    transition: 0.3s;
+background: $blue;
+height: 244px;
+width: calc((100% - 100px) / 6);
+border-radius: 20px 0 20px 0;
+margin-right: 20px;
+cursor: pointer;
+z-index: 100;
+position: relative;
+transition: 0.3s;
 
-    img {
-        width: 100%;
-        height: auto;
-        
-    }
-
-    &:nth-child(7) {
-        margin-right: 0;
-    }
-
-    &-bottom {
-        width: calc((100% - 0px) +  14px) ;
-        height: 55px;
-        background: #fff;
-        margin-top: 0;
-        position: absolute;
-        left: -7px;
-        bottom: 0;
-        display: flex;
-        bottom: 0px;
-        transition: 0.3s;
-        border-radius: 0 0 20px 0;
-        z-index: 1;
-        opacity: 0;
-       
-
-        p {
-            font-size: 20px;
-            color: #181818;
-            padding: 7px 7px;
-            
-
-        }
-    }
-}
-
-.person_photo-wrapper {
-    height: inherit;
-    overflow: hidden;
-}
-.cardOnHover{
-    border: 7px solid #fff;
-    border-radius: 20px 0 0 0
-} 
-.cardBottomOnHover {
-    bottom: -50px;
-    opacity: 1
-}
-.blue {
-    background: $blue;
-}
-.pink {
-    background: $pink;
-}
-.purple {
-    background: $purple;
-}
-
-.hidden{
-    opacity: 0;
-    top: -30%;
-    transition: 0.3s;
-}
-.visible{
-    opacity: 1;
-    top: 50%;
-    transition: 0.3s;
-    
-}
-
-// @keyframes cardopen {
-//     from {top: -30%}
-//     to {top: 50%}
-// }
-.person_card-open {
-    background: #95E1F9;
-    border-radius: 120px 0 120px 0;
-    width: 600px;
-    height: 250px;
-    position: absolute;
-    z-index: 120;
-    margin: auto;
-
-    .card-open_image {
-        width: 35%;
-        height: 100%;
-        overflow: hidden;
-
-          img {
+img {
 width: 100%;
 height: auto;
 
-        }
-    }
+}
+
+&:nth-child(7) {
+margin-right: 0;
+}
+
+&-bottom {
+width: calc((100% - 0px) + 14px) ;
+height: 55px;
+background: #fff;
+margin-top: 0;
+position: absolute;
+left: -7px;
+bottom: 0;
+display: flex;
+bottom: 0px;
+transition: 0.3s;
+border-radius: 0 0 20px 0;
+z-index: 1;
+opacity: 0;
+
+
+p {
+font-size: 20px;
+color: #181818;
+padding: 7px 7px;
+
+
+}
+}
+}
+
+.person_photo-wrapper {
+height: inherit;
+overflow: hidden;
+}
+.cardOnHover{
+border: 7px solid #fff;
+border-radius: 20px 0 0 0
+}
+.cardBottomOnHover {
+bottom: -50px;
+opacity: 1
+}
+.blue {
+background: $blue;
+}
+.pink {
+background: $pink;
+}
+.purple {
+background: $purple;
+}
+
+.hidden{
+opacity: 0;
+top: -30%;
+transition: 0.3s;
+}
+.visible{
+opacity: 1;
+top: 50%;
+transition: 0.3s;
+
+}
+
+// @keyframes cardopen {
+// from {top: -30%}
+// to {top: 50%}
+// }
+.person_card-open {
+background: #95E1F9;
+border-radius: 120px 0 120px 0;
+width: 600px;
+height: 250px;
+position: absolute;
+z-index: 120;
+margin: auto;
+
+.card-open_image {
+width: 35%;
+height: 100%;
+overflow: hidden;
+
+img {
+width: 100%;
+height: auto;
+
+}
+}
 }
 
 
 .footer {
-    width: 100%;
-    background: #181818;
+width: 100%;
+background: #181818;
 
-    &_wrapper {
-        width: 70%;   
-        display: flex;
-        flex-direction: column;
-        padding: 40px 80px 60px;
-        margin: 0 auto;
-        align-items: center;
+&_wrapper {
+width: 70%;
+display: flex;
+flex-direction: column;
+padding: 40px 80px 60px;
+margin: 0 auto;
+align-items: center;
 
-        .footer_logo {
-            width: 64px;
-            height: 64px;
-            margin: 40px auto 0;
-            cursor: pointer;
+.footer_logo {
+width: 64px;
+height: 64px;
+margin: 40px auto 0;
+cursor: pointer;
 
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
+img {
+width: 100%;
+height: auto;
+}
+}
 
-        
 
-    }
+
+}
 }
 
 .footer_links {
-    
-        display: flex;
-        margin: 0 auto ;
-        
 
-        ul{
-           
-            display: flex;
-            justify-content: space-between;
-            justify-content: center;
-            margin: 0 auto;
+display: flex;
+margin: 0 auto ;
 
-            li {
-                display: inline;
-                a {
-                    color: #fff;
-                }
-            }
-        }
-    
+
+ul{
+
+display: flex;
+justify-content: space-between;
+justify-content: center;
+margin: 0 auto;
+
+li {
+display: inline;
+a {
+color: #fff;
+}
+}
+}
+
 }
 
 @media screen and (max-width: 1280px){
-    .people_cards {
+.people_cards {
 
-        .person_card {
-            width: calc((100% - 100px) / 2);
+.person_card {
+width: calc((100% - 100px) / 2);
 
-            &:nth-child(2) {
-                margin-right: 0;
-            }
-        }
-    }
+&:nth-child(2) {
+margin-right: 0;
+}
+}
+}
 }
 
-@media screen and (max-width: 678px){
-    .people_cards {
- flex-direction: column;
-        .person_card {
-            width: 100%;
-            margin-bottom: 40px;
-        }
-    }
+@media screen and (max-width: 980px){
+.people_cards {
+flex-direction: column;
+.person_card {
+width: 100%;
+margin-bottom: 40px;
+height: 40%;
+}
+}
 
-    .people_row {
-       .people_category {
-           width: 100%;
-       }
-    }
+.people_row {
+.people_category {
+width: 100%;
+}
+}
 
-    .nav_wrapper {
-        flex-direction: column;
-       align-items: center;
-       background: #181818;
-       position: relative;
-       padding: 10px 0;
-       
-       .mobileMenu {
-            flex-direction: column;
-            background: #181818;
-            width: 100%;
-            align-items: center;
-            height: 100vh;
-            display: none;
-            transform: translateY(-20%);
-            transition: transform 0.3s;
+.nav_wrapper {
+flex-direction: column;
+align-items: center;
+background: #181818;
+position: relative;
+padding: 10px 0;
 
-           ul {
-               flex-direction: column;
-               background: #181818;
-               width: 100%;
-               margin-bottom: 20px;
-               margin-top: 20px;
-           }
-    
-           button {
-               max-width: 200px;
-               
-           }
-       }
+.mobileMenu {
+flex-direction: column;
+background: #181818;
+width: 100%;
+align-items: center;
+height: 100vh;
+opacity: 0;
+transform: translateY(-20%);
+transition: transform 0.3s;
+
+ul {
+flex-direction: column;
+background:
+ 
+#181818;
+width: 100%;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+button {
+max-width: 200px;
+
+}
+}
 
 .menuVisible {
-    display: block;
-    transform: translateY(16%);
-    z-index: 1200;
+opacity: 1;
+transform: translateY(16%);
+z-index: 1200;
 }
-        .burgerMenu {
-            display: block;
-            position: absolute;
-            top: 38%;
-            right: 10%;
-        }
-    }
+.burgerMenu {
+display: block;
+position: absolute;
+top: 38%;
+right: 10%;
+}
+}
 
-    .people_header {
-        width: 100%;
-    }
+.people_header {
+width: 100%;
+}
 
-    .peope_category {
-        width: 200px;
-    }
+.peope_category {
+width: 200px;
+}
 .footer_links {
-    ul {
+ul {
 
-        flex-direction: column;
-    }
+flex-direction: column;
+}
+}
+}
+
+.person_card-open {
+     display: flex;
+    overflow: hidden;
+}
+.card-open_content {
+    position: absolute;
+    left: 0;
+    width: 30%;
+.name {
+    font-family: 'EB Garamond', serif;
+    font-size: 64px;
+}
+}
+.card-open_image {
+  
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 1476px) {
+.person_card {
+height: 400px;
+img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+}
+
+.mobileMenu {
+width: 62%;
 }
 }
