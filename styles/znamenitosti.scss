@@ -350,14 +350,34 @@ flex-direction: column;
 .person_card-open {
      display: flex;
     overflow: hidden;
+    width: 70%;
+    height: 38%;
+   
 }
 .card-open_content {
     position: absolute;
+    padding: 50px 50px;
     left: 0;
-    width: 30%;
+    width: 50%;
+    
+   
 .name {
     font-family: 'EB Garamond', serif;
     font-size: 64px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 0;
+   
+}
+
+.date {
+    text-align: left;
+    padding: 0;
+   
+}
+
+.info {
+    text-align: left;
 }
 }
 .card-open_image {

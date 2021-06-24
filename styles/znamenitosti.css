@@ -388,17 +388,32 @@ p {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  width: 70%;
+  height: 38%;
 }
 
 .card-open_content {
   position: absolute;
+  padding: 50px 50px;
   left: 0;
-  width: 30%;
+  width: 50%;
 }
 
 .card-open_content .name {
   font-family: 'EB Garamond', serif;
   font-size: 64px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 0;
+}
+
+.card-open_content .date {
+  text-align: left;
+  padding: 0;
+}
+
+.card-open_content .info {
+  text-align: left;
 }
 
 .card-open_image {
