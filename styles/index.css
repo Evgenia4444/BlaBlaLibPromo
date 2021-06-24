@@ -48,7 +48,7 @@ ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  width: 64%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
