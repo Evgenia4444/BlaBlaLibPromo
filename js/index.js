@@ -16,7 +16,7 @@ $(document).ready(function () {
 function randomizer() {
   x = Math.floor((Math.random() * 3) + 1);
   console.log(x)
-  let person = `<img src='images/randomImage${x}.png'>`
+  let person = `<img height='100%' src='images/randomImage${x}.png'>`
   console.log(person)
   $('.randomImage_container').html(person)
 }

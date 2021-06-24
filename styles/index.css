@@ -111,12 +111,6 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-mask: url(../images/longmask2-02.svg);
-          mask: url(../images/longmask2-02.svg);
-  -webkit-mask-size: auto 100%;
-          mask-size: auto 100%;
-  -webkit-animation: streamAnim 100s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
-          animation: streamAnim 100s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
 }
 
 @-webkit-keyframes streamAnim {
@@ -190,6 +184,10 @@ button {
   left: 0;
   right: 0;
   width: 100%;
+  -webkit-clip-path: url(#stream);
+          clip-path: url(#stream);
+  aspect-ratio: 2/1;
+  object-fit: cover;
 }
 
 .seen {
