@@ -30,6 +30,9 @@ $('.salvador').click(function(){
 $('.frida').click(function(){
     $('.frida_open').toggleClass('visible')
 })
+$('.sezann').click(function(){
+    $('.sezann_open').toggleClass('visible')
+})
 $('.freddie').click(function(){
     $('.freddie_open').toggleClass('visible')
 })
@@ -39,6 +42,9 @@ $('.bethoven').click(function(){
 
 $('.amy').click(function(){
     $('.amy_open').addClass('visible')
+})
+$('.elvis').click(function(){
+    $('.elvis_open').addClass('visible')
 })
 $('.michael').click(function(){
     $('.michael_open').addClass('visible')
@@ -58,8 +64,17 @@ $('.dostoevski').click(function(){
 $('.arthur').click(function(){
     $('.arthur_open').addClass('visible')
 })
+$('.oscar').click(function(){
+    $('.oscar_open').addClass('visible')
+})
+$('.edgar').click(function(){
+    $('.edgar_open').addClass('visible')
+})
 $('.lincoln').click(function(){
     $('.lincoln_open').addClass('visible')
+})
+$('.margaret').click(function(){
+    $('.margaret_open').addClass('visible')
 })
 
 

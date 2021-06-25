@@ -209,6 +209,7 @@ p {
 
 .person_card-open {
   position: relative;
+  left: 15%;
 }
 
 .closeIcon {
