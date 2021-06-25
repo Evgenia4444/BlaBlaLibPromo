@@ -208,6 +208,54 @@ p {
 }
 
 .person_card-open {
+  position: relative;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 500;
+}
+
+.card_btn {
+  text-align: center;
+  float: left;
+}
+
+.cardSuccess {
+  width: 300px;
+  height: 140px;
+  background: #181818;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  border-radius: 20px 0 20px 0;
+  padding: 40px;
+  opacity: 0;
+  top: 50%;
+  left: 35%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardSuccess p {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.cardSuccess img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.person_card-open {
   background: #95E1F9;
   border-radius: 120px 0 120px 0;
   width: 600px;
