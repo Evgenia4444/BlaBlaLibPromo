@@ -106,7 +106,7 @@ button {
     right: 0;
     mask: url(../images/maskNew-02.png);
     mask-size: auto 100%;
-    animation: streamAnim 100s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+    animation: streamAnim 100s infinite;
 
     @keyframes streamAnim {
         0% {
@@ -155,8 +155,8 @@ button {
        right: 0;
        width: 100%;
     //   clip-path: url(#stream);
-      aspect-ratio: 2/1;
-      object-fit: cover;
+    //   aspect-ratio: 2/1;
+    //   object-fit: cover;
       
        
       

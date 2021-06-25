@@ -121,8 +121,8 @@ button {
           mask: url(../images/maskNew-02.png);
   -webkit-mask-size: auto 100%;
           mask-size: auto 100%;
-  -webkit-animation: streamAnim 100s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
-          animation: streamAnim 100s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+  -webkit-animation: streamAnim 100s infinite;
+          animation: streamAnim 100s infinite;
 }
 
 @-webkit-keyframes streamAnim {
@@ -196,8 +196,6 @@ button {
   left: 0;
   right: 0;
   width: 100%;
-  aspect-ratio: 2/1;
-  object-fit: cover;
 }
 
 .seen {
