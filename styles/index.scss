@@ -563,4 +563,15 @@ img {
             right: 10%;
         }
     }
+
+    .random {
+        height: 700px;
+
+        &_content {
+            margin: 40px auto;
+        }
+        .randomImage1 {
+            display: none;
+        }
+    }
 }

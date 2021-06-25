@@ -652,5 +652,14 @@ button {
     top: 38%;
     right: 10%;
   }
+  .random {
+    height: 700px;
+  }
+  .random_content {
+    margin: 40px auto;
+  }
+  .random .randomImage1 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */
