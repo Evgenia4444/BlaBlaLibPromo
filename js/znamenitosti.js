@@ -76,6 +76,9 @@ $('.lincoln').click(function(){
 $('.margaret').click(function(){
     $('.margaret_open').addClass('visible')
 })
+$('.victoria').click(function(){
+    $('.victoria_open').addClass('visible')
+})
 
 
 

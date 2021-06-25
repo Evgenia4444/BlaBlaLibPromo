@@ -88,3 +88,11 @@ $('.nav_btn').click(function(event) {
         'pointer-events': 'visible'
     })
 })
+
+$('.formCloseIcon').click(function(event) {
+    $('.formSuccess').css({
+        'opacity': '0',
+        
+    })
+})
+
