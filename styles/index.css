@@ -503,7 +503,11 @@ button {
   color: #fff;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 890px) {
+  .streamPath img {
+    height: 100%;
+    width: 100%;
+  }
   .nav_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
