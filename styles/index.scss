@@ -104,9 +104,9 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    // mask: url(../images/longmask2-02.svg);
-    // mask-size: auto 100%;
-    // animation: streamAnim 100s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+    mask: url(../images/maskNew-02.png);
+    mask-size: auto 100%;
+    animation: streamAnim 100s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
 
     @keyframes streamAnim {
         0% {
@@ -154,7 +154,7 @@ button {
        left: 0;
        right: 0;
        width: 100%;
-      clip-path: url(#stream);
+    //   clip-path: url(#stream);
       aspect-ratio: 2/1;
       object-fit: cover;
       
