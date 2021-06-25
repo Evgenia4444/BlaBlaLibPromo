@@ -216,6 +216,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   padding: 40px 77px;
+  margin-bottom: 230px;
 }
 
 .poster {
