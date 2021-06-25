@@ -236,36 +236,56 @@ button {
 }
 
 .decorativePhotos .photo {
-  width: calc((100% - 100px) / 5);
+  width: calc((100% - 200px) / 5);
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 200px;
+  margin-right: 60px;
 }
 
 .decorativePhotos .photo1 {
-  background-image: url(../images/exterior.png);
+  background-image: url(../images/decorPhoto1.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
 
 .decorativePhotos .photo2 {
-  background-image: url(../images/exterior.png);
+  background-image: url(../images/decorPhoto2.png);
   background-repeat: no-repeat;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
+  background-position: center;
+  background-size: cover;
 }
 
 .decorativePhotos .photo3 {
-  background-image: url(../images/exterior.png);
+  background-image: url(../images/decorPhoto3.png);
   background-repeat: no-repeat;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
+  background-position: center;
+  background-size: cover;
 }
 
 .decorativePhotos .photo4 {
-  background-image: url(../images/exterior.png);
+  background-image: url(../images/decorPhoto4.png);
   background-repeat: no-repeat;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
+  background-position: center;
+  background-size: cover;
+}
+
+.decorativePhotos .photo5 {
+  background-image: url(../images/decorPhoto5.png);
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background-position: center;
+  background-size: cover;
 }
 
 .footer {
@@ -329,7 +349,62 @@ button {
   color: #fff;
 }
 
-@media screen and (max-width: 678px) {
+.book_carousel {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0 60px;
+}
+
+.book_carousel_item,
+.book_carousel_item-hidden {
+  display: none;
+  margin: 0 auto;
+}
+
+.book_carousel_item-visible {
+  display: block;
+  text-align: center;
+}
+
+.book_carousel_item img {
+  width: 50%;
+  height: auto;
+}
+
+.book_carousel_item p {
+  margin-top: 12px;
+}
+
+.book_header {
+  font-size: 48px;
+  font-family: 'EB Garamond', serif;
+  margin: 30px auto 10px;
+  max-width: 70%;
+  text-align: center;
+}
+
+.book_carousel_actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 0 50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel_button-prev,
+.carousel_button-next {
+  background: transparent;
+}
+
+@media screen and (max-width: 980px) {
   .nav_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -400,12 +475,41 @@ button {
   }
   .about_main-photo {
     margin: 0 auto;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about_main-content {
     margin: 0 auto;
     text-align: center;
     margin-top: 40px;
     width: 100%;
+  }
+  .webposter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .webposter .text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .webposter .allusion {
+    width: 100%;
+    max-height: 300px;
+  }
+  .decorativePhotos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 40px 20px;
+  }
+  .decorativePhotos .photo {
+    width: 100%;
+    height: 300px;
   }
 }
 /*# sourceMappingURL=about.css.map */

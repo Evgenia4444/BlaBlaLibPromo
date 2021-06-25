@@ -69,3 +69,22 @@ function moveToPrevSlide() {
 $('.burgerMenu').click(function() {
   $('.mobileMenu').toggleClass('menuVisible')
 })
+
+$('.formBtn').click(function() {
+    $('.formSuccess').css({
+        'opacity': '1',
+        'top': '20%',
+    })
+})
+
+$('.formBtn').click(function(event) {
+    event.preventDefault();
+})
+
+$('.nav_btn').click(function(event) {
+    $('.bookModal').css({
+        'opacity': '1',
+        'top': '50%',
+        'pointer-events': 'visible'
+    })
+})
