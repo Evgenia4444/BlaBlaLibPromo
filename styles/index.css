@@ -234,12 +234,17 @@ button {
 }
 
 .random_content .randomImage_container {
-  width: 100px;
+  width: auto;
   height: 100px;
   background: #95E1F9;
   margin: 10px auto 20px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.random_content .randomImage_container img {
+  width: auto;
+  height: 100%;
 }
 
 .random .randomImage1 {
@@ -309,7 +314,7 @@ button {
 }
 
 .bookModal_container {
-  width: 100%;
+  max-width: 800px;
   position: absolute;
   top: 80px;
   height: 1000px;
