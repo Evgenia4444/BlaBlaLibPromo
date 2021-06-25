@@ -1,6 +1,5 @@
 nav {
   background: #181818;
-  z-index: 2000;
 }
 
 nav div {
@@ -21,6 +20,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 ul li {
@@ -36,10 +36,25 @@ ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  width: 64%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+button {
+  background: #95E1F9;
+  border-radius: 26px 3px;
+  padding: 12px 33px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  float: right;
 }
 
 .burgerMenu {
@@ -80,6 +95,7 @@ section {
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 1400;
 }
 
 .bookModal .header {
@@ -166,7 +182,7 @@ section {
   padding: 40px;
   opacity: 0;
   top: 0%;
-  left: 39%;
+  left: 35%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-align: center;
@@ -355,7 +371,7 @@ button {
   color: #fff;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 980px) {
   .nav_wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -379,7 +395,7 @@ button {
         -ms-flex-align: center;
             align-items: center;
     height: 100vh;
-    display: none;
+    opacity: 0;
     -webkit-transform: translateY(-20%);
             transform: translateY(-20%);
     -webkit-transition: -webkit-transform 0.3s;
@@ -401,7 +417,7 @@ button {
     max-width: 200px;
   }
   .nav_wrapper .menuVisible {
-    display: block;
+    opacity: 1;
     -webkit-transform: translateY(16%);
             transform: translateY(16%);
     z-index: 1200;
@@ -411,6 +427,12 @@ button {
     position: absolute;
     top: 38%;
     right: 10%;
+  }
+  .people_header {
+    width: 100%;
+  }
+  .peope_category {
+    width: 200px;
   }
   .footer_links ul {
     -webkit-box-orient: vertical;

@@ -77,9 +77,10 @@ $('.nav_btn').click(function(event) {
      
       'top': '80px',
       
-  })
-})
+  });
+  $('.mobileMenu').removeClass('menuVisible')
 
+})
 
 $('.bookModalCloseIcon').click(function() {
   $('.bookModal').css({
@@ -91,9 +92,11 @@ $('.bookModalCloseIcon').click(function() {
   })
 })
 
+
 $('.formCloseIcon').click(function(event) {
   $('.formSuccess').css({
       'opacity': '0',
       
   })
 })
+

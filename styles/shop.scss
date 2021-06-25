@@ -1,39 +1,53 @@
 nav {
-    background: #181818;
-    z-index: 2000;
+background: #181818;
 
-   div {
-        padding: 10px 20px;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
 
-    }
+div {
+padding: 10px 20px;
+height: 80px;
+display: flex;
+justify-content: space-between;
+
+}
 }
 
 ul {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
+text-align: center;
 
-    li {
-    margin-right: 16px;
-    display: inline-block;
 
-     a{
-         color: rgb(255, 255, 255);
-     }
-    }
+li {
+margin-right: 16px;
+display: inline-block;
+
+a{
+color: rgb(255, 255, 255);
+}
+}
 }
 
 .mobileMenu {
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
+display: flex;
+width: 64%;
+justify-content: space-between;
+
+}
+button {
+background: #95E1F9;
+border-radius: 26px 3px;
+padding: 12px 33px;
+text-align: center;
+font-size: 16px;
+justify-content: center;
+outline: none;
+border: none;
+cursor: pointer;
+float: right;
 }
 
-
 .burgerMenu {
-    display: none;
+display: none;
 }
 section {
     background: #181818;
@@ -67,6 +81,7 @@ section {
        position: absolute;
        top: 20px;
        right: 20px;
+       z-index: 1400;
     }
  
     .header {
@@ -140,7 +155,7 @@ section {
     padding: 40px ;
     opacity: 0;
     top: 0%;
-    left: 39%;
+    left: 35%;
     transition: 0.3s;
     align-items: center;
    
@@ -306,56 +321,66 @@ button {
     
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 980px) {
     .nav_wrapper {
         flex-direction: column;
-       align-items: center;
-       background: #181818;
-       position: relative;
-       padding: 10px 0;
-       
-       .mobileMenu {
-            flex-direction: column;
-            background: #181818;
-            width: 100%;
-            align-items: center;
-            height: 100vh;
-            display: none;
-            transform: translateY(-20%);
-            transition: transform 0.3s;
-
-           ul {
-               flex-direction: column;
-               background: #181818;
-               width: 100%;
-               margin-bottom: 20px;
-               margin-top: 20px;
-           }
-    
-           button {
-               max-width: 200px;
-               
-           }
-       }
-
-.menuVisible {
-    display: block;
-    transform: translateY(16%);
-    z-index: 1200;
-}
-        .burgerMenu {
-            display: block;
-            position: absolute;
-            top: 38%;
-            right: 10%;
-        }
-    }
-
-
-    .footer_links {
+        align-items: center;
+        background: #181818;
+        position: relative;
+        padding: 10px 0;
+        
+        .mobileMenu {
+        flex-direction: column;
+        background: #181818;
+        width: 100%;
+        align-items: center;
+        height: 100vh;
+        opacity: 0;
+        transform: translateY(-20%);
+        transition: transform 0.3s;
+        
         ul {
-    
-            flex-direction: column;
+        flex-direction: column;
+        background:
+         
+        #181818;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
         }
-    }
+        
+        button {
+        max-width: 200px;
+        
+        }
+        }
+        
+        .menuVisible {
+        opacity: 1;
+        transform: translateY(16%);
+        z-index: 1200;
+        }
+        .burgerMenu {
+        display: block;
+        position: absolute;
+        top: 38%;
+        right: 10%;
+        }
+        }
+        
+        .people_header {
+        width: 100%;
+        }
+        
+        .peope_category {
+        width: 200px;
+        }
+        .footer_links {
+        ul {
+        
+        flex-direction: column;
+        }
+        }
 }
+
+

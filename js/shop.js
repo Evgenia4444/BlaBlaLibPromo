@@ -77,3 +77,49 @@ $('.button_buy').on('click', function(){
     $('.burgerMenu').click(function() {
         $('.mobileMenu').toggleClass('menuVisible')
     })
+
+    $('.formBtn').click(function() {
+        $('.formSuccess').css({
+            'opacity': '1',
+            'top': '20%',
+        })
+    })
+    
+    $('.formBtn').click(function(event) {
+        event.preventDefault();
+    })
+    
+    $('.nav_btn').click(function(event) {
+        $('.bookModal').css({
+            'opacity': '1',
+            'top': '50%',
+            'pointer-events': 'visible'
+        });
+        $('.bookModal_container').css({
+           
+            'top': '80px',
+            
+        });
+        $('.mobileMenu').removeClass('menuVisible')
+    
+    })
+    
+    $('.bookModalCloseIcon').click(function() {
+        $('.bookModal').css({
+            'opacity': '0',
+            
+        });
+        $('.bookModal_container').css({    
+            'top': '-100%',      
+        })
+    })
+    
+    
+    $('.formCloseIcon').click(function(event) {
+        $('.formSuccess').css({
+            'opacity': '0',
+            
+        })
+    })
+    
+    

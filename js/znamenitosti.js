@@ -17,9 +17,9 @@ $('.nav_btn').click(function(event) {
     });
     $('.bookModal_container').css({
        
-        'top': '80px',
-        
-    })
+        'top': '80px',       
+    });
+    $('.mobileMenu').removeClass('menuVisible')
 })
 
 $('.formCloseIcon').click(function(event) {

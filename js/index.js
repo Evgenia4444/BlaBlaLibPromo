@@ -14,7 +14,7 @@ $(document).ready(function () {
 // })
 
 function randomizer() {
-  x = Math.floor((Math.random() * 3) + 1);
+  x = Math.floor((Math.random() * 7) + 1);
   console.log(x)
   let person = `<img height='100%' src='images/randomImage${x}.png'>`
   console.log(person)
@@ -91,7 +91,9 @@ $('.nav_btn').click(function(event) {
        
         'top': '80px',
         
-    })
+    });
+    $('.mobileMenu').removeClass('menuVisible')
+
 })
 
 $('.bookModalCloseIcon').click(function() {
