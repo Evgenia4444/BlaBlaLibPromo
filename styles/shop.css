@@ -2,10 +2,6 @@ nav {
   background: #181818;
 }
 
-nav body {
-  overflow-y: hidden;
-}
-
 nav div {
   padding: 10px 20px;
   height: 80px;
@@ -444,5 +440,10 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.modal {
+  left: 30%;
+  top: 20%;
 }
 /*# sourceMappingURL=shop.css.map */
