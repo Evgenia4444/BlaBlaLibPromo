@@ -84,7 +84,20 @@ margin-bottom: 32px;
         }
     }
 }
+.slider {
+    display: flex;
+    position: relative;
 
+    .slick-slide {
+        margin-right: 20px;
+    }
+    .slick-prev {
+        left: 0;
+    }
+    .slick-next {
+        right: 0;
+    }
+}
 
 .photos {
     background: #181818;

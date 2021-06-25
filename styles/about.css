@@ -100,6 +100,25 @@ button {
   width: 100%;
 }
 
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.slider .slick-slide {
+  margin-right: 20px;
+}
+
+.slider .slick-prev {
+  left: 0;
+}
+
+.slider .slick-next {
+  right: 0;
+}
+
 .photos {
   background: #181818;
   color: #fff;
