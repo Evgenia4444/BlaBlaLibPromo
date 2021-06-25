@@ -446,4 +446,16 @@ button {
   left: 30%;
   top: 20%;
 }
+
+.btn_container {
+  width: 100%;
+  position: relative;
+  height: 60px;
+}
+
+.btn_container button {
+  margin: 0 auto;
+  position: absolute;
+  right: 42%;
+}
 /*# sourceMappingURL=shop.css.map */
