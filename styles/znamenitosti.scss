@@ -313,6 +313,7 @@ transition: 0.3s;
   text-align: center;
   float: left;
   cursor: pointer;
+  background: #fff;
 }
 
 .cardSuccess {
@@ -426,7 +427,8 @@ color: #fff;
     display: flex;
    overflow: hidden;
    width: 70%;
-   height: 36%;
+   height: 50%;
+   color: #181818;
   
 }
 .card-open_content {
