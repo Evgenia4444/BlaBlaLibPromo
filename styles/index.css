@@ -338,6 +338,12 @@ button {
   position: relative;
 }
 
+.bookModal .bookModalCloseIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .bookModal .header {
   font-size: 20px;
   color: #181818;

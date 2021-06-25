@@ -293,6 +293,12 @@ button {
     pointer-events:none;
     position: relative;
 
+    .bookModalCloseIcon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+     }
+     
     .header {
         font-size: 20px;
         color: #181818;

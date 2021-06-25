@@ -1,5 +1,6 @@
 nav {
   background: #181818;
+  z-index: 2000;
 }
 
 nav div {
@@ -47,6 +48,144 @@ ul li a {
 
 section {
   background: #181818;
+}
+
+.bookModal_container {
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  max-height: 800px;
+  z-index: 300;
+  background: transparent;
+}
+
+.bookModal {
+  background: #95E1F9;
+  opacity: 0;
+  border-radius: 40px 0 40px 0;
+  border: 7px solid #fff;
+  width: 400px;
+  height: 560px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: -10%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  pointer-events: none;
+  position: relative;
+}
+
+.bookModal .bookModalCloseIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.bookModal .header {
+  font-size: 20px;
+  color: #181818;
+  margin-bottom: 28px;
+  width: 100%;
+}
+
+.bookModal input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 12px 30px;
+  margin-bottom: 20px;
+  border-radius: 20px 0 20px 0;
+}
+
+.bookModal input::-webkit-input-placeholder {
+  color: #454545;
+}
+
+.bookModal input:-ms-input-placeholder {
+  color: #454545;
+}
+
+.bookModal input::-ms-input-placeholder {
+  color: #454545;
+}
+
+.bookModal input::placeholder {
+  color: #454545;
+}
+
+.bookModal button {
+  background: #181818;
+  color: #fff;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.bookModal select {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-color: #fff;
+  /* Fallback color if gradients are not supported */
+  /* For Chrome and Safari */
+  /* For old Firefox (3.6 to 15) */
+  /* For pre-releases of Internet Explorer  10*/
+  /* For old Opera (11.1 to 12.0) */
+  background-image: url(../images/select-arrow.png), -webkit-gradient(linear, left top, left bottom, from(#E5E5E5), to(#F4F4F4));
+  background-image: url(../images/select-arrow.png), linear-gradient(to bottom, #E5E5E5, #F4F4F4);
+  /* Standard syntax; must be last */
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #fff;
+  border-radius: 10px 0 10px 0;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  color: #181818;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding: 6px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  outline: none;
+}
+
+.formSuccess {
+  width: 300px;
+  height: 140px;
+  background: #181818;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  border-radius: 20px 0 20px 0;
+  padding: 40px;
+  opacity: 0;
+  top: 0%;
+  left: 39%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formSuccess p {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.formCloseIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 .carousel {
