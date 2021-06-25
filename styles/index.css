@@ -279,6 +279,12 @@ button {
   margin: 0 auto;
 }
 
+.carousel_item p, .carousel_item h4,
+.carousel_item-hidden p,
+.carousel_item-hidden h4 {
+  color: #181818;
+}
+
 .carousel_item-visible {
   display: block;
 }

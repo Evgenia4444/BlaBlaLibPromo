@@ -236,6 +236,10 @@ button {
 .carousel_item-hidden {
     display: none;
     margin: 0 auto;
+
+    p, h4 {
+        color: #181818;
+    }
 }
 
 .carousel_item-visible {
