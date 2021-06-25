@@ -72,11 +72,13 @@
 
             <div class="slider slidesToScroll">
 
-                <div class="col-md-12"><img src="./images/item2.jpg" alt=""></div>
-                <div class="col-md-12"><img src="./images/item2.jpg" alt=""></div>
-                <div class="col-md-12"><img src="./images/item2.jpg" alt=""></div>
-                <div class="col-md-12"><img src="./images/item2.jpg" alt=""></div>
-                <div class="col-md-12"><img src="./images/item2.jpg" alt=""></div>
+                <div ><img src="./images/slick1.jpg" alt=""></div>
+                <div ><img src="./images/slick2.jpg" alt=""></div>
+                <div ><img src="./images/slick3.jpg" alt=""></div>
+                <div><img src="./images/item2.jpg" alt=""></div>
+                <div><img src="./images/item2.jpg" alt=""></div>
+                <div ><img src="./images/item2.jpg" alt=""></div>
+                <div ><img src="./images/item2.jpg" alt=""></div>
             </div>
         </div>
     </section>
@@ -160,19 +162,16 @@
         $('.slider').slick({
             infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 3
+            slidesToScroll: 1
         });
-        $('.slider').slick({
-  arrows: false
-})
-
-$('.left').click(function(){
-  $('.slider').slick('slickPrev');
-})
-
-$('.right').click(function(){
-  $('.slider').slick('slickNext');
-})
+        $(function(){
+  $(".slider").slick({
+    speed: 1000,
+    
+    prevArrow: '<button class="slide-arrow prev-arrow">vfsdv</button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+  });
+});
     </script>
 
     <script src='./js/about.js'></script>
